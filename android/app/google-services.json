@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1033230592290",
+    "firebase_url": "https://flutterpractice-b5a4d.firebaseio.com",
+    "project_id": "flutterpractice-b5a4d",
+    "storage_bucket": "flutterpractice-b5a4d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1033230592290:android:056d2da9832ca7ff6f5d7b",
+        "android_client_info": {
+          "package_name": "nicklaus.fw.latihan_pengunaan_bloc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1033230592290-359fi2bvnl591vniakq3ev9h7568da37.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkqzuQOXPhMUMHl0xc9HzRYH04tbJJyEI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1033230592290-359fi2bvnl591vniakq3ev9h7568da37.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
