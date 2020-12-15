@@ -2,6 +2,7 @@ part of 'services.dart';
 
 class AuthServices {
   static FirebaseAuth auth = FirebaseAuth.instance;
+
   //proses asynchronous, <> tipe data untuk pengembalin nilai
   static Future<String> signUp(
       String email, String password, String name) async {
@@ -33,5 +34,11 @@ class AuthServices {
       msg = e.toString();
     }
     return msg;
+  }
+
+  static Future<bool> signOut() async {
+    bool result = false;
+    await auth.signOut().whenComplete(() => result = true);
+    return result;
   }
 }

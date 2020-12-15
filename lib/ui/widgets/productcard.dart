@@ -8,12 +8,19 @@ class ProductCard extends StatelessWidget {
     return Card(
       margin: EdgeInsets.all(8),
       child: ListTile(
-        onTap: () {},
+        onTap: () {
+          Navigator.push(
+              context,
+              MaterialPageRoute(
+                  builder: (context) => DetailProductPage(product: product)));
+        },
         title: Text(
           product.name,
           style: TextStyle(fontSize: 20),
         ),
-        subtitle: Text(product.price),
+        subtitle: Text(
+            NumberFormat.currency(locale: 'id', decimalDigits: 0, symbol: 'Rp')
+                .format(int.parse(product.price))),
         leading: CircleAvatar(
           backgroundColor: Colors.white,
           backgroundImage: NetworkImage(product.image, scale: 40),

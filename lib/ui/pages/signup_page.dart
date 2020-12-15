@@ -101,7 +101,7 @@ class _SignUpPageState extends State<SignUpPage> {
                                   msg: "Sign up successful",
                                   toastLength: Toast.LENGTH_SHORT,
                                   gravity: ToastGravity.BOTTOM,
-                                  backgroundColor: Colors.red,
+                                  backgroundColor: Colors.green,
                                   textColor: Colors.white,
                                   fontSize: 16);
                               setState(() {

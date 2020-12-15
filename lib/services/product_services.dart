@@ -42,4 +42,23 @@ class ProductServices {
       return false;
     }
   }
+
+  static Future<bool> updateProduct(
+      String id, String name, String price) async {
+    await Firebase.initializeApp();
+    return await productCollection
+        .doc(id)
+        .update({'name': name, 'price': price})
+        .then((value) => true)
+        .catchError((error) => false);
+  }
+
+  static Future<bool> deleteProduct(String id) async {
+    await Firebase.initializeApp();
+    return await productCollection
+        .doc(id)
+        .delete()
+        .then((value) => true)
+        .catchError((error) => false);
+  }
 }
